@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <template id="mytemplate">
+      <style>
+        :host {
+          color: tomato;
+        }
+      </style>
+      <img src="" alt="my image" />
+      <div class="comment">that's me</div>
+      <script>
+        const comment = querySelector(".comment");
+
+        console.log(comment);
+      </script>
+    </template>
+  </body>
+  <script src="./scripts/htmltemplate.ts"></script>
+</html>

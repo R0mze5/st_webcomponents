@@ -1,11 +1,11 @@
 {
-  "name": "webcomponents",
+  "name": "st_webcomponents",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel ./src/index.html",
+    "build": "parcel ./src/build index.html"
   },
   "keywords": [],
   "author": "",
