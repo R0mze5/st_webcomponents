@@ -1,6 +1,6 @@
-import HelloWorldElement from './HelloWorldComponent'
-import PlasticButton from './PlasticButtonComponent'
-import CustomLabel  from './CustomLabelComponent'
+import HelloWorldElement from './components/HelloWorldComponent'
+import PlasticButton from './components/PlasticButtonComponent'
+import CustomLabel  from './components/CustomLabelComponent'
 
 window.customElements.define("hello-world-element", HelloWorldElement);
 window.customElements.define("plastic-button", PlasticButton, {

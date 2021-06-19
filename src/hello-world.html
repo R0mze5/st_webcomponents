@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="some">
     <nav>
       <ul>
         <li><a href="./hello-world">hello world</a></li>
@@ -15,21 +15,21 @@
       </ul>
     </nav>
 
-    <template id="mytemplate">
-      <style>
-        :host {
-          color: tomato;
-        }
-      </style>
-      <img src="" alt="my image" />
-      <div class="comment">that's me</div>
-      <script>
-        const comment = querySelector(".comment");
-
-        console.log(comment);
-      </script>
-    </template>
-
-    <script src="./scripts/templates/htmltemplate.ts"></script>
+    <hello-world-element name="asdf">
+      <ul slot="my-text">
+        <li>value 1</li>
+        <li>value 2</li>
+      </ul>
+      <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+      </div>
+      <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+      </div>
+    </hello-world-element>
   </body>
 </html>
