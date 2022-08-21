@@ -5,7 +5,7 @@ class CustomLabel extends HTMLLabelElement {
     super();
 
     document.addEventListener("DOMContentLoaded", () => {
-      this.setAttribute('tabindex', 1);
+      this.setAttribute('tabindex', '1');
       this.setAttribute('style', 'display: block;')
     })
 
@@ -23,6 +23,10 @@ class CustomLabel extends HTMLLabelElement {
         }))
       }
     })
+  }
+
+  connectedCallback() {
+    
   }
 }
 

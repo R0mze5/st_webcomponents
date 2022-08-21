@@ -1,4 +1,4 @@
-const template: HTMLElement | null = document.querySelector('#mytemplate')  
+const template: HTMLTemplateElement | null = document.querySelector('#mytemplate')  
  
 
 // if(template instanceof HTMLElement) {
@@ -13,12 +13,15 @@ const template: HTMLElement | null = document.querySelector('#mytemplate')
 //   document.body.appendChild(clone)
 // }
 
-if(template instanceof HTMLElement) {
+if(template && template instanceof HTMLTemplateElement) {
  
+const img = template.content.querySelector('img')
+  if(img) {
+    img.src = 'logo.png' 
 
-  (template as HTMLMetaElement).content.querySelector('img').src = 'logo.png' 
+  }
 
-  const clone = document.importNode((template as HTMLMetaElement).content , true)
+  const clone = document.importNode(template.content , true)
 
   const div = document.createElement('div')
 
